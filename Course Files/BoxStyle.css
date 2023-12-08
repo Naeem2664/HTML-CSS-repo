@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.A{
+	border: solid aqua 4px;
+	display: block;
+	width: 10%;
+	height: 200px;
+	border-top-color: greenyellow;
+	border-bottom-color: greenyellow;
+	border-left-color: aqua;
+	border-right-color: aqua;
+	border-radius: 20px;
+	background-color: gray;
+	margin: 60px auto 0px auto;
+	box-shadow: 6px 6px 10px 5px black;
+}
+h1{
+	color: greenyellow;
+	text-shadow: 4px 2px black;
+}

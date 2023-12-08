@@ -1,0 +1,206 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Navgation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: chocolate;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#logo img {
+    width: 80px;
+    height: 60px;
+    margin: 2px;
+    border-radius: 200px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    font-size: 20px;
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    margin: 1px 10px;
+    padding: 10px 25px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: rgb(240, 245, 245);
+
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(82, 22, 22);
+}
+
+/*Home Section*/
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 40px
+}
+
+#home p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+#home::before {
+    content: " ";
+    background: url('background.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 307px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    color: rgb(175, 146, 146);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+/*Utility class*/
+.btn {
+    background-color: rgb(14, 11, 11);
+    padding: 2px 5px;
+    color: rgb(241, 241, 245);
+    border-radius: 2px;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+/*Services section*/
+#services {
+    margin: 30px;
+    display: flex;
+}
+
+.services-container h1 {
+    color: rgb(5, 5, 5);
+}
+
+#services .box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(128, 101, 83);
+}
+
+#services .box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 200px;
+}
+
+#services h3 {
+    padding-top: 40px;
+}
+
+/*Client Section*/
+#client-section {
+    height: 350px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('client6.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 60px;
+}
+
+#clients img {
+    height: 150px;
+}
+
+/*Contact Section*/
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('client4.jpeg') no-repeat center center/cover;
+
+}
+
+#contact-box {
+
+    padding-left: 520px;
+    padding-right: 520px;
+    padding-bottom: 35px;
+}
+
+#contact-box input,
+textarea {
+    width: 100%;
+    padding: 0.4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 14px;
+}
+
+#contact-box label {
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer {
+    text-align: center;
+    background-color: brown;
+    height: 30px;
+    width: 100%;
+    color: white;
+}

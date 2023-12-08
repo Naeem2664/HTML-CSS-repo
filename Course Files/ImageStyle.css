@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.img{ 
+	height: 100vh;
+	background-image: url(im.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background: radial-gradient(skyblue 40%,blue 60%);
+}
+.whitespace{
+	height: 300px;
+}

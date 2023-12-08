@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Positioning</title>
+	<style type="text/css">
+		.container{
+			border: 2px solid black;
+			height: 2000px;
+			background-color: rgb(10, 10, 30);
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			border: 1px solid blue;
+			background-color: lightgrey;
+			display: inline-block;
+			margin: 10px;
+
+		}
+		#box1{/** Relative position positioned the box with respect to its normal position **/
+			position: relative;
+			top: 50px;
+		}
+		#box2{
+			/****/
+			position: sticky;
+			bottom: 50px;
+		}
+		#box3{ 
+			position: absolute;
+			right: 10px;
+			
+		}
+		#box4{
+			position: fixed;
+			bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>
+		<div class="box" id="box3"></div>
+		<div class="box" id="box4"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(148, 152, 158);
+            width: 80%;
+            margin: 50px auto;
+            padding: 10px;
+            border: 2px solid red;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-rows: 80px 200px 100px;
+            grid-template-columns: 1fr 140px;
+        }
+        #navbar{
+            background-color: rgb(6, 61, 45);
+            grid-column: 1/5;
+        }  
+       /*  #box-1{
+            background-color: rgb(138, 94, 139);
+        }
+        #box-2{
+            background-color: rgb(46, 37, 63);
+        }
+        #box-3{
+            background-color: chocolate;
+        } */
+        #aside{
+            background-color: rgb(51, 61, 35);
+            grid-row: 2/4; 
+            grid-column: 4/5;
+        }
+        #section{
+            background-color: rgb(110, 35, 110);
+            grid-column: 1/4;
+            grid-row: 2/4;
+        }
+        #footer{
+            background-color: tomato;
+            height: 80px;
+            grid-column: 1/5;
+        }
+        .box{
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">This is Navbar</div>
+        <!-- <div id="box-1" class="box">This is box 1</div>
+        <div id="box-2" class="box">This is box 2</div>
+        <div id="box-3" class="box">This is box 3</div> -->
+        <div id="aside" class="box">This is aside</div>
+        <div id="section" class="box">This is section</div>
+        <div id="footer" class="box">This is footer</div>
+    </div>
+</body>
+</html>

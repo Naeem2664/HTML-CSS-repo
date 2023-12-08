@@ -1,0 +1,22 @@
+body{
+		  	background-image: url(blurred.jpg);
+		  	background-size: 100% 200%;
+		  	background-repeat: no-repeat;
+		  	color: lightgray;
+		
+		  }
+		  input{
+		  	color: darkblue;
+		  	border-radius: 10px;
+		  }	
+		  form {
+		  	align-content: center;
+		  	display: inline-table;
+		  	font-family: arial;
+		  	background-image: url(photo2.jpg);
+		  	background-size: 600px 600px;
+		  	background-repeat: no-repeat;
+		  	border: solid 2px black;
+		  	border-radius: 12px;
+
+		  }

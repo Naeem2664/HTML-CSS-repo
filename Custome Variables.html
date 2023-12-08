@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Variables/ Custome Properties</title>
+    <style type="text/css">
+    	.container{
+    		display: flex;
+    		background: lightcyan;
+    		width: 100%;
+    		height: 700px;
+    		justify-content: center;
+    	}
+    	.box{
+    		--box-color: blue;
+    		border: 2px solid black;
+    		width: 100px;
+    		height: 100px;
+    		margin: 10px 30px;
+    	}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>   
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+</body>
+</html>

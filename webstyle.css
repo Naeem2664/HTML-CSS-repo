@@ -1,0 +1,22 @@
+.navbar{
+			display: flex;
+			
+		}
+		.navbar ul{
+			overflow: auto;
+			display: flex;
+		}
+		.navbar li{
+			list-style: none;
+		}
+		.navbar a{
+			text-decoration: none;
+			padding: 1px 10px;
+			color: black;
+			font-family: fantasy;
+		}
+		a:hover{
+			color: white;
+			background-color: aqua;
+			border-radius: 10px;
+		}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Using Media Query</title>
+    <style>
+        :root {
+            --main-radius: 4px;
+            --main-padding: 4px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 4px auto;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 0.2fr 1.5fr 1.3fr 0.3fr;
+            grid-gap: 2px;
+            grid-template-areas: "navbar navbar navbar navbar"
+                "sidebar main main main"
+                "sidebar content-1 content-2 content-3"
+                "footer footer footer footer";
+        }
+
+        #navbar {
+            background-color: rgb(107, 173, 151);
+            grid-area: navbar;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        #main {
+            background-color: rgb(97, 126, 207);
+            grid-area: main;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        #sidebar {
+            background-color: rgb(32, 136, 196);
+            grid-area: sidebar;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        #content-1 {
+            background-color: rgb(44, 211, 127);
+            grid-area: content-1;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        #content-2 {
+            background-color: rgb(21, 128, 74);
+            grid-area: content-2;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        #content-3 {
+            background-color: rgb(11, 92, 52);
+            grid-area: content-3;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        #footer {
+            background-color: rgb(14, 151, 25);
+            grid-area: footer;
+            border-radius: var(--main-radius);
+            padding: var(--main-padding);
+        }
+
+        @media only screen and (max-width:550px) {
+            .container {
+                background-color: aliceblue;
+                margin: 4px auto;
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.3fr 0.3fr 2.1fr 1.1fr 1.1fr 1.1fr 1fr;
+                grid-template-areas:
+                    "navbar"
+                    "sidebar"
+                    "main"
+                    "content-1"
+                    "content-2"
+                    "content-3"
+                    "footer";
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="box" id="navbar">Navbar</nav>
+        <main class="box" id="main">Main Section</main>
+        <div class="box" id="sidebar">Sidebar</div>
+        <div class="box" id="content-1">Content 1</div>
+        <div class="box" id="content-2">Content 2</div>
+        <div class="box" id="content-3">Content 2</div>
+        <footer class="box" id="footer">Footer</footer>
+    </div>
+</body>
+
+</html>

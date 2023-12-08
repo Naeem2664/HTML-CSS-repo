@@ -1,0 +1,119 @@
+<html>
+     <head>
+         <title>My Form</title>  
+     </head>                                 
+   
+<body bgcolor="black">
+<div style="color:yellow">
+  <h1 align="center">Registration Form</h1>
+     <form align="left"> <!--form created for registration-->
+   <h1>Single Line Text</h1>	 
+		 First Name:<br><input type="text" name="fname" placeholder="Enter your first name" maxlength="25" size="20"><br><br>
+		 <!--First name field, type is defined by the programmer,user can only write text here  -->
+	     Last Name:<br><input type="text"  name="lname"  placeholder="Enter your last name" maxlength="25" size="20"><br><br>
+	     <!--Last name field,user can write there name less than or equal to 25 characters-->
+		 User Name:<br><input type="charecters" name="username" placeholder="Enter user name" maxlength="25" size="20"><br><br>
+		 Email Address:<br><input type="charecters" name="email" placeholder="Your Email Address" size="20"><br><br>
+		 <!--Email Address Field, user should write there email in charecters-->
+		 Password:<br><input type="password" name="password" placeholder="10 charecters maximum" maxlength="10" size="20"><br><br>
+		 <!-- Password Field, type is defined as password means when user enter his password
+		 it shows bullets or dots instead of charecters -->
+		 Confirm Password:<br><input type="password" name="confirmpassword" placeholder="Confirm your password" maxlength="10" size="20"><br><br>
+		 Phone:<br><input type="text" placeholder="Enter your number" maxlength="25" size="20"><br><br> 
+   <h1>Select Boxes</h1>
+<h2>Date of Birth</h2>
+	     <select name="days">
+             <option selected="selected">select day</option>	
+             <option value="day">1</option>
+             <option value="day">2</option>	
+             <option value="day">3</option>	
+             <option value="day">4</option>	
+             <option value="day">5</option>	
+             <option  value="day">6</option>	
+             <option value="day">7</option>	
+             <option value="day">8</option>	
+             <option value="day">9</option>	
+             <option value="day">10</option>	
+             <option value="day">11</option>
+             <option value="day">12</option>			 	
+             <option value="day">13</option>
+             <option value="day">14</option>	
+             <option value="day">15</option>	
+             <option value="day">16</option>	
+             <option value="day">17</option>	
+             <option  value="day">18</option>	
+             <option value="day">19</option>	
+             <option value="day">20</option>	
+             <option value="day">21</option>	
+             <option value="day">22</option>	
+             <option value="day">23</option>
+             <option value="day">24</option>			 
+             <option value="day">25</option>
+             <option value="day">26</option>	
+             <option value="day">27</option>	
+             <option value="day">28</option>	
+             <option value="day">29</option>	
+             <option  value="day">30</option>	
+             <option value="day">31</option>				 
+		 </select>
+		  <select name="months">
+             <option selected="selected">select month</option>	
+             <option value="jan">January</option>
+             <option value="feb">Febraury</option>	
+             <option value="mar">March</option>	
+             <option value="apr">April</option>	
+             <option value="may">May</option>	
+             <option  value="june">June</option>	
+             <option value="jul">July</option>	
+             <option value="aug">August</option>	
+             <option value="sep">September</option>	
+             <option value="oct">October</option>	
+             <option value="nov">November</option>
+             <option value="dec">December</option>			 
+		 </select>
+		     <input type="character" name="year" placeholder="e.g 2000" maxlength="5" size="10">
+         <h1>Different Lists in Select Box</h1>
+         <select name="languages">
+                 <option>Languages</option>		 
+             <optgroup label="Web Development" disabled="disabled"></optgroup>
+                 <option value="wd">HTML</option>
+				 <option value="wd">PHP</option>
+				 <option value="wd">JS</option>
+                 <optgroup label="Programing Languages" disabled="disabled>"></optgroup>
+                 <option value="pl">JAVA</option>
+				 <option value="pl">C++</option>
+				 <option value="pl">Python</option>	
+<!--We can show different groups in select box by using <optgroup></optgroup> tag  -->				 
+		 </select>
+  <h1>File Select Box</h1>
+         
+	     <label>Choose a file.. </label>
+         <input type="file" value="file submit">
+<!-- File select box created in input tag  by using type as file -->		 
+  <h1>Radio Buttons</h1>
+         <input type="radio" name="gender" value="male">Male
+		 <input type="radio" name="gender" value="female">female
+		 <input type="radio" name="gender" value="others">Others<br><br>
+  <h1>CheckBoxes</h1>
+		 <input type="checkbox" name="skill" value="a" style="color:green">Java<br><br>
+         <input type="checkbox" name="skill" value="b">C++<br><br>				  
+         <input type="checkbox" name="skill" value="c">Python<br><br>
+		 <input type="checkbox" name="skill" value="d">Kotlin<br><br>
+		 <input type="checkbox" name="skill" value="e">Lua<br><br>
+		 <!--Checkboxes are created by type of checkbox in in input attribute and differentiate all the
+		 checkboxes by giving them different values -->
+  <h1>Multi Line Text</h1>
+         Message:<br><textarea name="message" cols="22" rows="8" style="resize:none;"></textarea><br><br>
+		 <!-- Messag  field in which (cols) mean columns and rows means rows of text area, we have used style attribute 
+ 		 with resize property with none to fix the width and height of the field  -->
+  <h1>Buttons</h1>
+ 		 <button type="submit" >Submit</button>
+         <button type="reset" >Clear!</button>
+<!--Buttons are created by button attribute by using type of button-->
+<!--Select Boxes are created by select tag and elements are given by option tag -->
+<h1>Hidden bOX</h1>
+		 <input type ="hidden" name="language" value="English">
+	 </form>
+	 </div>
+</body>
+</html>

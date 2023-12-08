@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media Query</title>
+	<style type="text/css">
+		.box{
+			background: blueviolet;
+			font-size: 50px;
+			text-align: center;
+			color: antiquewhite;
+			
+		}
+		@media(max-width: 400px){
+			body{
+				display: inline;
+				background: tomato;
+			}
+			#box2,#box3{
+				display: none;
+			}
+			img{
+				width: 390px;
+				margin: auto;
+			}
+			#box1{
+				font-size: 100px;
+				display: block;
+				color: blueviolet;
+				background: ghostwhite;
+			}
+		}
+		@media(min-width: 400px) and (max-width: 720px){
+			body{
+				display: inline;
+				background: blueviolet;
+			}
+			img{
+				width: 700px;
+				margin: auto;
+			}
+			#box3,#box1{
+				display: none;
+			}
+			#box2{
+				font-size: 150px;
+				background: tomato;
+				color: ghostwhite;
+				display: block;
+			}
+		}
+		@media(min-width: 720px){
+			body{
+				display: inline;
+				background: ghostwhite;
+			}
+			img{
+				width: 720px;
+				margin: auto;
+			}
+			#box2,#box1{
+				display: none;
+			}
+			#box3{
+				font-size: 200px;
+				color: tomato;
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+    <div class="box" >
+    	<h1 id="box1">I'm a Phone.</h1>
+    </div>
+    <div class="box" ><h1 id="box2">I'm a Tablet.</h1></div>
+    <div class="box" ><h1 id="box3">I'm a Laptop</h1></div>
+    <div><img id="img1" src="Bilal2.jpeg"></div>
+</body>
+</html>

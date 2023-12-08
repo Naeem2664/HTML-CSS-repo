@@ -1,0 +1,19 @@
+h1,h3,h5
+	 {
+	     color:red;
+	     text-decoration:underline yellow;
+	 }
+h2,h4,h6  
+	 {
+	     color:yellow;
+	     text-decoration:underline blue;
+	 }
+
+div
+	 {
+	     font-size:30px;
+	     font-style:italic;
+	     color:blue;
+		 border-color:red dotted;
+		 text-align:center
+	 }

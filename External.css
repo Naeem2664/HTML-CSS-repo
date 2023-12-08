@@ -1,0 +1,23 @@
+h1,h2
+   {
+	 color:blue;
+	 font-size:20px;
+	 border:3px solid purple;
+	 text-align:center:
+   }
+p
+   {
+	 color:green;
+	 font-size:20px;
+	 font-family:italic;
+	 text-align:center;
+	 
+   }
+div
+   {
+	 text-align:center;
+	 border:2px solid;
+	 border-color:green;
+	 text-align:left;
+	 color:black;
+   }
